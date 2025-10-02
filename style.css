@@ -1,0 +1,225 @@
+body { font-family: Arial, sans-serif;  background-color: #F2E7E7; min-width: 500px; }
+
+
+
+ 
+h2{
+    margin: 0;
+}
+.plot{
+    height: 220px;
+    display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap:10px;
+  margin-bottom:20px;
+
+} 
+.plot div p {
+    text-align: center;
+}
+
+.plot div{
+    flex:1;
+    
+}
+.arrow{
+ display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.arrow-svg{
+    transform: scale(0.7);
+}
+.wind-value{
+    position: unset !important;
+}
+
+.plot-container{
+ display: flex;     
+ align-items: flex-end;   
+ justify-content: flex-end;     /* Układ poziomy */
+  gap: 10px;     
+  height: 110px;           /* Odstęp między elementami (opcjonalnie) */
+}
+.plot-container div{
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: lightblue; /* tylko dla pokazania wrappera */
+  margin: 100px auto; /* centrowanie */
+  overflow: visible; /* ważne, żeby tekst nie był przycięty */
+}
+.plot-value{
+    position: relative;
+    top: -20px;
+    margin: 0;
+}
+.plot-time{
+    margin: 0;
+    position: relative;
+    bottom: 0;
+}
+
+.top {
+  top: -24px;
+}
+
+.bottom {
+  bottom: -24px;
+}
+
+
+#output{
+    display: inline;
+}
+.container {
+  display: flex;       /* ustawiamy flexbox */
+  gap: 10px;           /* opcjonalnie - odstęp między elementami */
+  align-items: flex-start; /* opcjonalnie - wyrównanie w pionie */
+}
+.container > :last-child {
+  /* tutaj style dla ostatniego dziecka */
+  margin-left: auto;  /* np. w flexboxie wypchnie element na prawo */
+}
+
+.buttons{
+    display: flex;
+}
+
+.weather-info{
+    display: flex;
+    flex-direction: row;
+}
+
+.description{
+    display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  margin-top:20px;
+  gap:10px;
+}
+.description > div:last-child {
+    margin-left: auto;
+}
+/* .description div{
+    display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+} */
+.description-btn{
+
+    /* display: flex; */
+    flex-direction: row;
+    display: inline-block;
+}
+.description-list{
+   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+
+}
+.description-list p {
+    margin: 0;
+}
+
+#temp-description{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+/* nowe style */
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 500px;
+    max-width: 90%;
+    margin: 40px auto;
+    padding: 10px 15px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+}
+
+.search-bar input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-bar .icon {
+    color: #9aa0a6;
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.search-bar .mic {
+    color: #4285f4;
+    margin-left: 8px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button{
+    cursor: pointer;
+  background: none;
+  border: none;
+}
+.clear-btn{
+    border-right: 1px solid #dfe1e5;
+}
+
+#weather-icon{
+    width: 60px;
+  height: 60px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+p{
+    margin: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 14px; /* lub 15px, w zależności od potrzeby */
+    font-weight: 400;
+    color: #5f6368;
+  
+}
+.description div:last-child h2,
+.description div:last-child p {
+    text-align: right !important;
+   
+}
+
+.description-btn button.btn-active {
+   font-weight: bold;
+   color: black
+}
+.reverse{
+  direction: rtl;
+}
+
+.buttons a button{
+     font-family: 'Roboto', Arial, sans-serif;
+    font-size: 14px;
+}
+.vertical-line {
+    border-right: 2px solid #5f6368; /* pionowa linia */
+ 
+    display: inline-block; /* żeby była w linii z innymi elementami */
+   margin-left: 10px;
+   margin-right: 10px;
+}
+.underline{
+    border-bottom: 3px solid yellow;
+    margin-bottom: 4px;
+}
+.initial{
+    direction: initial;
+}
