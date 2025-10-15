@@ -1,4 +1,4 @@
-body { font-family: Arial, sans-serif;  background-color: #F2E7E7; min-width: 500px; max-width:800px; margin: auto}
+body { font-family: Arial, sans-serif;  background-color: #F2E7E7; min-width: 500px; max-width: 800px; margin: auto;}
 
 
 
@@ -21,7 +21,7 @@ h2{
 
 .plot div{
     flex:1;
-    
+    max-width: 92px;
 }
 .arrow{
  display: flex;
